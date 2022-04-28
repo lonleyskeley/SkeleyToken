@@ -12,4 +12,6 @@ Characteristics
 - Validates tokens in order to prevent request/webhook spam.
 - Retrieves general information about a user (*username, phone number, and so on*).
 - Shows a neat embed with all the information you require.
-- #### :mega: Just a note
+
+Just a note
+//I am in charge of modifying it, but not of its use against another user.
